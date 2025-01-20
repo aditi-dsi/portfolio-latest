@@ -46,7 +46,7 @@ export default function Sections() {
             </div>
 
             <div>
-            <h3 className="font-mono"><a target="_blank" href="https://wobot.ai" className="underline underline-offset-4">BlackWell</a> - a token utility dapp</h3>
+            <h3 className="font-mono"><a target="_blank" href="https://blackwell.vercel.app" className="underline underline-offset-4">BlackWell</a> - a token utility dapp</h3>
               
               <p className="font-mono text-sm text-gray-400 mt-1">
                 Developed everything: staker, credit scoring on wallet history, etc. 

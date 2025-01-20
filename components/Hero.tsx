@@ -46,7 +46,7 @@ export default function Hero() {
       {/* Social Links */}
       <div className="fixed right-20 top-3/4 transform -translate-y-1/2 flex flex-col gap-4 text-base font-mono">
         <Link 
-          href="https://terminal.example.com" 
+          href="https://webshell.aditi.codes" 
           target="_blank"
           className="hover:text-gray-400 transition-colors underline underline-offset-4"
         >
