@@ -3,12 +3,13 @@
 import NET from "vanta/src/vanta.net";
 import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import VerticalLinks from "./VerticalLinks";
 
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
 
+  /* Background 3D animator object */
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -43,43 +44,9 @@ export default function Hero() {
         </h2>
       </div>
 
-      {/* Social Links */}
-      <div className="fixed right-20 top-3/4 transform -translate-y-1/2 flex flex-col gap-4 text-base font-mono">
-        <Link 
-          href="https://webshell.aditi.codes" 
-          target="_blank"
-          className="hover:text-gray-400 transition-colors underline underline-offset-4"
-        >
-          webshell
-        </Link>
-        <Link 
-          href="https://x.com/halfacupoftea_" 
-          target="_blank"
-          className="hover:text-gray-400 transition-colors underline underline-offset-4"
-        >
-          x (twitter)
-        </Link>
-        <Link 
-          href="https://linkedin.com/in/aditi-bindal" 
-          target="_blank"
-          className="hover:text-gray-400 transition-colors underline underline-offset-4"
-        >
-          linkedin
-        </Link>
-        <Link 
-          href="https://github.com/aditi-dsi"
-          target="_blank" 
-          className="hover:text-gray-400 transition-colors underline underline-offset-4"
-        >
-          github
-        </Link>
-        <Link 
-          href="mailto:aditii.b6@gmail.com" 
-          target="_blank"
-          className="hover:text-gray-400 transition-colors underline underline-offset-4"
-        >
-          email
-        </Link>
+      {/* Social Links - For larger screens */}
+      <div className="hidden lg:block  fixed right-20 top-3/4 transform -translate-y-1/2">
+        <VerticalLinks />
       </div>
     </div>
   );

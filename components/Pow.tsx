@@ -1,3 +1,5 @@
+import VerticalLinks from "./VerticalLinks";
+
 export default function Sections() {
   return (
     <div className="bg-[#000000] w-full py-20 text-gray-200 px-12 sm:px-16 md:px-20 lg:px-24 xl:px-32">
@@ -158,6 +160,12 @@ export default function Sections() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Social Links - For mobile/tablet */}
+      <div className="lg:hidden mt-20 flex ">
+        <div className="inline-block">
+          <VerticalLinks />
         </div>
       </div>
     </div>
