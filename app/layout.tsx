@@ -32,7 +32,7 @@ const ibmPlex= IBM_Plex_Sans({
 	display: "swap",
 });
 export const metadata: Metadata = {
-	title: 'Aditi Bindal - Portfolio',
+	title: 'Aditi Bindal',
 	description: 'DevRel | Developer | Web3 | AI',
   }
 
