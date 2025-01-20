@@ -35,6 +35,13 @@ export default function VerticalLinks() {
           github
         </Link>
         <Link 
+          href="https://dev.to/aditi_b"
+          target="_blank" 
+          className="hover:text-gray-400 transition-colors underline underline-offset-4"
+        >
+          dev.to
+        </Link>
+        <Link 
           href="mailto:aditii.b6@gmail.com" 
           target="_blank"
           className="hover:text-gray-400 transition-colors underline underline-offset-4"
