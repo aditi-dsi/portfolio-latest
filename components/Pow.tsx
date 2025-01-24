@@ -93,6 +93,20 @@ export default function Sections() {
 
           <div className="space-y-8">
             <div>
+              <h3 className="font-mono">Build a Verifiable AI Agent with Eliza & Opacity AVS</h3>
+              <a
+                href="https://nodeshift.com/blog/build-a-verifiable-ai-agent-with-eliza-opacity-avs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-sm underline underline-offset-4 hover:text-gray-400 transition-colors"
+              >
+                nodeshift.com/blog/verifiableaiagent
+              </a>
+              <p className="font-mono text-sm text-gray-400 mt-1">
+              The concept of verifiable AI agents represents a significant leap in trust and transparency within human-AI interactions. In current times,...
+              </p>
+            </div>
+            <div>
               <h3 className="font-mono">Build Your Own AI Agent in Minutes with Eliza: A Complete Guide</h3>
               <a
                 href="https://dev.to/nodeshiftcloud/build-your-own-ai-agent-in-minutes-with-eliza-a-complete-guide-263l"
