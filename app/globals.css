@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* Custom CSS */
+html, body {
+  overflow-x: hidden;  
+}
+
 .social-links {
   flex-direction: row; 
   justify-content: space-around; 

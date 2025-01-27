@@ -93,6 +93,21 @@ export default function Sections() {
 
           <div className="space-y-8">
             <div>
+              <h3 className="font-mono">A Step-by-Step Guide to Install DeepSeek-R1 Locally with Ollama, vLLM or Transformers
+              </h3>
+              <a
+                href="https://dev.to/nodeshiftcloud/a-step-by-step-guide-to-install-deepseek-r1-locally-with-ollama-vllm-or-transformers-44a1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-sm underline underline-offset-4 hover:text-gray-400 transition-colors"
+              >
+                dev.to/nodeshiftcloud/deepseek-r1
+              </a>
+              <p className="font-mono text-sm text-gray-400 mt-1">
+              DeepSeek-R1 is making waves in the AI community as a powerful open-source reasoning model, offering advanced capabilities that...              
+              </p>
+            </div>
+            <div>
               <h3 className="font-mono">Build a Verifiable AI Agent with Eliza & Opacity AVS</h3>
               <a
                 href="https://nodeshift.com/blog/build-a-verifiable-ai-agent-with-eliza-opacity-avs"
@@ -134,21 +149,6 @@ export default function Sections() {
               </a>
               <p className="font-mono text-sm text-gray-400 mt-1">
               Blockchain networks rely on decentralization, and validator nodes are key to maintain decentralization. These nodes...
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-mono">How to Run a Polygon Node: A Complete Guide</h3>
-              <a
-                href="https://nodeshift.com/blog/how-to-run-a-polygon-node-a-complete-guide"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-sm underline underline-offset-4 hover:text-gray-400 transition-colors"
-              >
-                nodeshift.com/blog/polygon
-              </a>
-              <p className="font-mono text-sm text-gray-400 mt-1">
-              Polygon is a Layer 2 Blockchain designed to address Ethereum’s scaling challenges. It enables faster transactions and...
               </p>
             </div>
 
