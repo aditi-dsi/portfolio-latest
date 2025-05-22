@@ -5,7 +5,7 @@ import { Source_Code_Pro } from "next/font/google";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { AOSInit } from "./aos";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 const spaceMono = Space_Mono({
@@ -37,19 +37,29 @@ export const metadata: Metadata = {
 	description: 'DevRel | Developer | Web3 | AI',
   }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <AOSInit />
+      <head>
+        {/* Google Analytics script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VCDCCWR94X"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VCDCCWR94X');
+          `}
+        </Script>
+      </head>
       <body className={ubuntu.className}>
+        <AOSInit />
         {children}
-        <GoogleAnalytics gaId="G-VCDCCWR94X" />
       </body>
     </html>
   );
-}
+
 
