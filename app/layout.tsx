@@ -6,19 +6,6 @@ import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { AOSInit } from "./aos";
 import { GoogleAnalytics } from '@next/third-parties/google'
- 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-      <GoogleAnalytics gaId="G-VCDCCWR94X" />
-    </html>
-  )
-}
 
 const inter = Inter({ subsets: ["latin"] });
 const spaceMono = Space_Mono({
@@ -51,22 +38,18 @@ export const metadata: Metadata = {
   }
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<html lang='en'>
-			<AOSInit />
-			<body className={ubuntu.className}>{children}</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <AOSInit />
+      <body className={ubuntu.className}>
+        {children}
+        <GoogleAnalytics gaId="G-VCDCCWR94X" />
+      </body>
+    </html>
+  );
 }
-
-
-
-
-
-
-
 
