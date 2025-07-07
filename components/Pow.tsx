@@ -1,5 +1,4 @@
-import VerticalLinks from "./VerticalLinks";
-
+import Image from "next/image";
 export default function Sections() {
   return (
     <div className="bg-[#000000] w-full py-20 text-gray-200 px-12 sm:px-16 md:px-20 lg:px-24 xl:px-32">
@@ -18,7 +17,7 @@ export default function Sections() {
              <h4 className="font-mono text-sm text-gray-400 mt-3 mb-3"><a target="_blank" href="https://eval.ai" className="underline underline-offset-4">EvalAI (by CloudCV)</a> &bull; Georgia, USA (Remote)</h4> 
                 <ol className="font-mono text-sm text-gray-400 mt-1">
                   <li className="pl-4">&bull; Contributing under Google Summer of Code 2025.</li>
-                  <li className="pl-4">&bull; Worked on UI/UX for EvalAI's main dashboard.</li>
+                  <li className="pl-4">&bull; Worked on UI/UX for EvalAI&rsquo;s main dashboard.</li>
                   <li className="pl-4">&bull; Wrote test cases for modules to increase coverage.</li>
                   <li className="pl-4">&bull; Improved the UI/UX & content of Documentation site.</li>
                   <li className="pl-4">&bull; Working on RAG-based chat assistant for enhanced support.</li>
@@ -83,7 +82,7 @@ export default function Sections() {
               >
                 huggingface.co/spaces/OpenSorus
               </a>
-              <img src="/assets/opensorus-demo-pic.png" alt="OpenSorus Project" className="mx-auto mt-6 w-1/2" />
+              <Image src="/assets/opensorus-demo-pic.png" alt="OpenSorus Project" width={800} height={600} className="mx-auto mt-6 w-1/2" />
               <p className="font-mono text-sm text-gray-400 mt-4 lg:mr-10">
               OpenSorus is an autonomous GitHub Issues Maintainer Agent that augments open-source triage by aligning developer queries with semantically searched & indexed codebase contexts. Leveraging retrieval-augmented generation with LlamaIndex and Mistral’s Codestral model, the agent crafts and posts real-time, context-aware replies directly on GitHub. 
               <br />
@@ -101,7 +100,7 @@ export default function Sections() {
               >
                 github.com/aditi-dsi/attention-is-all-you-need
               </a>
-              <img src="/assets/transformers-project-banner.jpeg" alt="Transformers Project" className="mx-auto mt-6 w-1/2" />
+              <Image src="/assets/transformers-project-banner.jpeg" alt="Transformers Project" width={800} height={600} className="mx-auto mt-6 w-1/2" />
               <p className="font-mono text-sm text-gray-400 mt-4 lg:mr-10">
               A ground-up PyTorch implementation of the original Transformer architecture as proposed in the paper “Attention is All You Need”. This project dissects core components like multi-head self-attention, position-wise feedforward networks, and layer normalization, reconstructing them from first principles to offer deep transparency into the model’s mechanics.
               <br />
@@ -119,7 +118,7 @@ export default function Sections() {
               >
                 github.com/aditi-dsi/DogBreedClassifier
               </a>
-              <img src="/assets/dog-classifier-banner.png" alt="Dog Breed Classifier Project" className="mx-auto mt-6 w-1/2" />
+              <Image src="/assets/dog-classifier-banner.png" alt="Dog Breed Classifier Project" width={800} height={600} className="mx-auto mt-6 w-1/2" />
               <p className="font-mono text-sm text-gray-400 mt-4 lg:mr-10">
               A comparative image classification pipeline leveraging pre-trained convolutional neural networks (AlexNet, VGG, ResNet) to distinguish dog breeds with high accuracy across varied input scenarios. The system evaluates model robustness on both canonical pet datasets and real-world edge cases, enabling inference on custom user images through a lightweight batch script. Built to benchmark architectural performance in fine-grained visual recognition tasks.
               <br />
