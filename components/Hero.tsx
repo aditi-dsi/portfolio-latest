@@ -4,6 +4,7 @@ import NET from "vanta/src/vanta.net";
 import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
 import VerticalLinks from "./VerticalLinks";
+import MobileNav from "./MobileNav";
 
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -35,12 +36,13 @@ export default function Hero() {
       className=" min-h-screen w-full flex flex-col justify-center items-start text-gray-200 relative"
       ref={vantaRef}
     >
+      <header className="fixed top-4 right-4 z-50"><MobileNav /></header>
       <div className="mx-12 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32">
         <h1 className="text-gray-200 tracking-wider font-semibold text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           Aditi Bindal
         </h1>
         <h2 className="text-gray-200 tracking-wider text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl mt-4 font-semilight">
-          DevRel | Developer | Web3 | AI
+          Software Engineer | DevRel | AI
         </h2>
       </div>
 
