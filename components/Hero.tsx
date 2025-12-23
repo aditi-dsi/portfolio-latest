@@ -42,7 +42,7 @@ export default function Hero() {
           Aditi Bindal
         </h1>
         <h2 className="text-gray-200 tracking-wider text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl mt-4 font-semilight">
-          Software Engineer | DevRel | AI
+          Software Engineer | AI/ML
         </h2>
       </div>
 
