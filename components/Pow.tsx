@@ -10,9 +10,6 @@ export default function Sections() {
           <div className="space-y-8">
 
             <div className="relative border border-gray-900 rounded-md p-6 lg:mr-20">
-               <span className="absolute -top-2 -left-2 bg-white text-black text-[10px] px-2 py-[2px] leading-[16px] font-bold rounded-full font-sans shadow-md">
-                Current
-              </span>
              <h3 className="font-mono">Software Engineer Intern</h3> 
              <h4 className="font-mono text-sm text-gray-400 mt-3 mb-3"><a target="_blank" href="https://eval.ai" className="underline underline-offset-4">EvalAI (by CloudCV)</a> &bull; Georgia, USA (Remote)</h4> 
                 <ol className="font-mono text-sm text-gray-400 mt-1">
@@ -25,9 +22,6 @@ export default function Sections() {
             </div>
 
             <div className="relative border border-gray-900 rounded-md p-6 lg:mr-20">
-              <span className="absolute -top-2 -left-2 bg-white text-black text-[10px] px-2 py-[2px] leading-[16px] font-bold rounded-full font-sans shadow-md">
-                Current
-              </span>
              <h3 className="font-mono">Developer Relations Engineer</h3> 
              <h4 className="font-mono text-sm text-gray-400 mt-3 mb-3"><a target="_blank" href="https://nodeshift.com" className="underline underline-offset-4">NodeShift</a> &bull; Abu Dhabi, UAE (Remote)</h4> 
                 <ol className="font-mono text-sm text-gray-400 mt-1">
